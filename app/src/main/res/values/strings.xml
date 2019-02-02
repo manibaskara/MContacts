@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">M Contacts</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="no_account_yet_create_one">No account yet? Create one</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="number">Number</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="registration">Registration</string>
+    <string name="register">Register</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="add_contact_title">Add New Contact</string>
+    <string name="edit_contact">Edit Contact</string>
+    <string name="view_contact">View Contact</string>
+    <string name="welcome_to_m_contacts">Welcome to M-Contacts</string>
+</resources>

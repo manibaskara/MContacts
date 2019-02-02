@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp_8"
+    android:paddingTop="@dimen/_5dp"
+    android:paddingEnd="@dimen/dp_8"
+    android:paddingBottom="@dimen/dp_8"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_5dp"
+            android:background="@color/teal_100" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5dp"
+            android:background="@color/teal_100" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_8"
+        android:text="@string/name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:background="@drawable/bg_rounded_white_tv"
+        android:hint="@string/name"
+        android:inputType="textCapWords"
+        android:maxLength="16"
+        android:padding="@dimen/dp_8"
+        android:textAlignment="textStart"
+        tools:ignore="Autofill" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_8"
+        android:text="@string/number"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sp" />
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:background="@drawable/bg_rounded_white_tv"
+        android:hint="@string/enter_number"
+        android:inputType="number"
+        android:maxLength="16"
+        android:padding="@dimen/dp_8"
+        android:textAlignment="textStart"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:background="@drawable/bg_rounded_primary_dark_tv"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/edit"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:background="@drawable/bg_rounded_primary_dark_tv"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnEditSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:background="@drawable/bg_rounded_primary_dark_tv"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:background="@drawable/bg_rounded_primary_dark_tv"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/delete_contact"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
