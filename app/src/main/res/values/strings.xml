@@ -20,4 +20,5 @@
     <string name="edit_contact">Edit Contact</string>
     <string name="view_contact">View Contact</string>
     <string name="welcome_to_m_contacts">Welcome to M-Contacts</string>
+    <string name="password_requirements">*Hint – Minimum 6 letters, One capital letter[A–Z], One small letter[a–z] and One numerical value[0-9].</string>
 </resources>

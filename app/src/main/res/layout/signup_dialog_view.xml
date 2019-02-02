@@ -75,7 +75,7 @@
             android:background="@drawable/bg_rounded_white_tv"
             android:hint="@string/name"
             android:singleLine="true"
-            android:inputType="textCapWords"
+            android:inputType="textPersonName"
             android:padding="@dimen/dp_8"
             android:textAlignment="textStart" />
 
@@ -137,6 +137,13 @@
             android:padding="@dimen/dp_8"
             android:textAlignment="textStart" />
 
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password_requirements"
+            android:textSize="@dimen/_14sp"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/btn_signUp"

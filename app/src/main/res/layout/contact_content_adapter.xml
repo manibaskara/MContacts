@@ -56,8 +56,10 @@
     </LinearLayout>
 
     <View
+        android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:alpha="0.2"
         android:layout_below="@+id/imageView"
         android:layout_marginTop="@dimen/_3dp"
         android:background="@color/gradient_end_color" />

@@ -33,15 +33,15 @@ public class HomePresenterImpl implements HomeContract.Presenter {
     @Override
     public void onSave(String ownerEmail, String name, String number) {
         if (name.isEmpty()) {
-            homeView.setNameError("Enter Contact Name");
+            homeView.setNameError("Enter contact name");
         } else if (number.isEmpty()) {
-            homeView.setNumberError("Enter Contact Number.");
+            homeView.setNumberError("Enter contact number.");
         } else {
 
             homeViewModel.insertUserContact(new UserContact(ownerEmail, name, number));
             homeView.hideBottomSheet();
             homeView.hideKeyBoard();
-            homeView.showToast("Contact saved Successfully.");
+            homeView.showToast("Contact saved successfully.");
         }
     }
 
@@ -57,9 +57,9 @@ public class HomePresenterImpl implements HomeContract.Presenter {
         String strOldName = userContact.getContactName();
         String strOldNumber = userContact.getPhoneNumber();
         if (name.isEmpty()) {
-            homeView.setNameError("Enter Contact Name");
+            homeView.setNameError("Enter contact name");
         } else if (number.isEmpty()) {
-            homeView.setNumberError("Enter Contact Number.");
+            homeView.setNumberError("Enter contact number.");
         } else if (strOldName.equals(name) && strOldNumber.equals(number)) {
             homeView.setNameError("No changes detected.");
         } else {
@@ -68,7 +68,7 @@ public class HomePresenterImpl implements HomeContract.Presenter {
             homeViewModel.updateUserContact(userContact);
             homeView.hideBottomSheet();
             homeView.hideKeyBoard();
-            homeView.showToast("Contact updated Successfully.");
+            homeView.showToast("Contact updated successfully.");
         }
 
 
@@ -86,7 +86,7 @@ public class HomePresenterImpl implements HomeContract.Presenter {
     @Override
     public void onLogoutClick() {
         homeViewModel.onLogoutClick();
-        homeView.showToast("Logged out Successfully.");
+        homeView.showToast("Logged out successfully.");
         homeView.logOut();
     }
 }
